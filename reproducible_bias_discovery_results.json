@@ -1,0 +1,708 @@
+{
+  "seed": 42,
+  "n_tracts_audited": 9794,
+  "n_regions": 5,
+  "discovery_1_semantic_mirage": {
+    "total_buildings_audited": 19169786,
+    "total_ms_only_buildings": 8118258,
+    "total_typed_buildings": 3772596,
+    "regional_provenance_table": {
+      "eastern-ok": {
+        "n_tracts": 1192,
+        "population": 3926466,
+        "total_buildings": 2551694,
+        "ms_only_pct": 69.36,
+        "osm_involved_pct": 16.68,
+        "typed_bldg_pct": 5.75,
+        "with_height_pct": 70.35,
+        "mean_v8_bldg_gap": 0.00574,
+        "mean_v8_cov_gap": 0.09672
+      },
+      "eastern-wa": {
+        "n_tracts": 415,
+        "population": 1676917,
+        "total_buildings": 1081345,
+        "ms_only_pct": 38.07,
+        "osm_involved_pct": 55.9,
+        "typed_bldg_pct": 12.23,
+        "with_height_pct": 71.86,
+        "mean_v8_bldg_gap": 0.00061,
+        "mean_v8_cov_gap": 0.07165
+      },
+      "maricopa-az": {
+        "n_tracts": 1593,
+        "population": 6606494,
+        "total_buildings": 2908224,
+        "ms_only_pct": 13.04,
+        "osm_involved_pct": 79.68,
+        "typed_bldg_pct": 37.87,
+        "with_height_pct": 80.8,
+        "mean_v8_bldg_gap": 0.00038,
+        "mean_v8_cov_gap": 0.03871
+      },
+      "northern-ca": {
+        "n_tracts": 591,
+        "population": 2458891,
+        "total_buildings": 1164723,
+        "ms_only_pct": 50.83,
+        "osm_involved_pct": 46.58,
+        "typed_bldg_pct": 11.66,
+        "with_height_pct": 83.16,
+        "mean_v8_bldg_gap": 0.00425,
+        "mean_v8_cov_gap": 0.06233
+      },
+      "south-central-tx": {
+        "n_tracts": 6001,
+        "population": 25758569,
+        "total_buildings": 11463800,
+        "ms_only_pct": 43.31,
+        "osm_involved_pct": 51.0,
+        "typed_bldg_pct": 19.68,
+        "with_height_pct": 74.28,
+        "mean_v8_bldg_gap": 0.00259,
+        "mean_v8_cov_gap": 0.05174
+      }
+    },
+    "tribal_vs_nontribal_ms_only_share": {
+      "n_focal": 845,
+      "n_ref": 8947,
+      "mean_focal": 0.78421,
+      "mean_ref": 0.33114,
+      " focal_ci95": [
+        0.76565,
+        0.80188
+      ],
+      "ref_ci95": [
+        0.32331,
+        0.33849
+      ],
+      "diff": 0.45307,
+      "diff_ci95": [
+        0.43294,
+        0.47226
+      ],
+      "ratio": 2.3682,
+      "ratio_ci95": [
+        2.2929,
+        2.4487
+      ],
+      "mann_whitney_p": 7.933644876833882e-204
+    },
+    "tribal_vs_nontribal_typed_share": {
+      "n_focal": 8947,
+      "n_ref": 845,
+      "mean_focal": 0.26219,
+      "mean_ref": 0.06975,
+      " focal_ci95": [
+        0.25497,
+        0.26909
+      ],
+      "ref_ci95": [
+        0.06133,
+        0.07864
+      ],
+      "diff": 0.19244,
+      "diff_ci95": [
+        0.18123,
+        0.2032
+      ],
+      "ratio": 3.7588,
+      "ratio_ci95": [
+        3.3149,
+        4.278
+      ],
+      "mann_whitney_p": 9.008693561544478e-54
+    },
+    "tribal_vs_nontribal_raw_bldg_gap_mirage": {
+      "n_focal": 845,
+      "n_ref": 8947,
+      "mean_focal": 0.00747,
+      "mean_ref": 0.00217,
+      " focal_ci95": [
+        0.00688,
+        0.00813
+      ],
+      "ref_ci95": [
+        0.00206,
+        0.00231
+      ],
+      "diff": 0.0053,
+      "diff_ci95": [
+        0.00469,
+        0.00596
+      ],
+      "ratio": 3.4372,
+      "ratio_ci95": [
+        3.1098,
+        3.8151
+      ],
+      "mann_whitney_p": 1.2131641158921042e-181
+    },
+    "high_wildfire_vs_low_wildfire_untyped_share": {
+      "n_focal": 1959,
+      "n_ref": 7833,
+      "mean_focal": 0.8375,
+      "mean_ref": 0.73364,
+      " focal_ci95": [
+        0.82513,
+        0.84953
+      ],
+      "ref_ci95": [
+        0.7264,
+        0.74116
+      ],
+      "diff": 0.10386,
+      "diff_ci95": [
+        0.08984,
+        0.11794
+      ],
+      "ratio": 1.1416,
+      "ratio_ci95": [
+        1.1219,
+        1.1617
+      ],
+      "mann_whitney_p": 1.2276731559828287e-35
+    }
+  },
+  "discovery_1_named_tracts": [
+    {
+      "GEOID": "48201433505",
+      "region": "south-central-tx",
+      "county_name": "Harris County, TX",
+      "NAMELSAD": "Census Tract 4335.05",
+      "aiannh_name": "",
+      "pop_total": 2898,
+      "n_overture_bldg": 189,
+      "ms_only_pct": 100.0,
+      "untyped_pct": 100.0,
+      "svi_overall": 0.9544,
+      "wildfire_burn_pct": 0.0,
+      "raw_bldg_gap": 0.00632,
+      "v8_coverage_gap": 0.15405
+    },
+    {
+      "GEOID": "40049681600",
+      "region": "eastern-ok",
+      "county_name": "Garvin County, OK",
+      "NAMELSAD": "Census Tract 6816",
+      "aiannh_name": "Chickasaw OTSA",
+      "pop_total": 1839,
+      "n_overture_bldg": 1969,
+      "ms_only_pct": 100.0,
+      "untyped_pct": 100.0,
+      "svi_overall": 0.4248,
+      "wildfire_burn_pct": 0.08,
+      "raw_bldg_gap": 0.01884,
+      "v8_coverage_gap": 0.17823
+    },
+    {
+      "GEOID": "06007002601",
+      "region": "northern-ca",
+      "county_name": "Butte County, CA",
+      "NAMELSAD": "Census Tract 26.01",
+      "aiannh_name": "",
+      "pop_total": 2474,
+      "n_overture_bldg": 2021,
+      "ms_only_pct": 99.95,
+      "untyped_pct": 100.0,
+      "svi_overall": 0.4796,
+      "wildfire_burn_pct": 24.12,
+      "raw_bldg_gap": 0.00652,
+      "v8_coverage_gap": 0.10131
+    },
+    {
+      "GEOID": "53065950200",
+      "region": "eastern-wa",
+      "county_name": "Stevens County, WA",
+      "NAMELSAD": "Census Tract 9502",
+      "aiannh_name": "",
+      "pop_total": 4076,
+      "n_overture_bldg": 4916,
+      "ms_only_pct": 97.99,
+      "untyped_pct": 99.37,
+      "svi_overall": 0.4869,
+      "wildfire_burn_pct": 28.2,
+      "raw_bldg_gap": 0.00897,
+      "v8_coverage_gap": 0.14501
+    },
+    {
+      "GEOID": "04009961202",
+      "region": "maricopa-az",
+      "county_name": "Graham County, AZ",
+      "NAMELSAD": "Census Tract 9612.02",
+      "aiannh_name": "",
+      "pop_total": 4102,
+      "n_overture_bldg": 1923,
+      "ms_only_pct": 95.79,
+      "untyped_pct": 97.97,
+      "svi_overall": 0.5118,
+      "wildfire_burn_pct": 17.71,
+      "raw_bldg_gap": 0.0089,
+      "v8_coverage_gap": 0.06734
+    },
+    {
+      "GEOID": "40099790600",
+      "region": "eastern-ok",
+      "county_name": "Murray County, OK",
+      "NAMELSAD": "Census Tract 7906",
+      "aiannh_name": "Chickasaw OTSA",
+      "pop_total": 2041,
+      "n_overture_bldg": 2419,
+      "ms_only_pct": 95.78,
+      "untyped_pct": 99.96,
+      "svi_overall": 0.3598,
+      "wildfire_burn_pct": 9.52,
+      "raw_bldg_gap": 0.01366,
+      "v8_coverage_gap": 0.20706
+    },
+    {
+      "GEOID": "53005010701",
+      "region": "eastern-wa",
+      "county_name": "Benton County, WA",
+      "NAMELSAD": "Census Tract 107.01",
+      "aiannh_name": "",
+      "pop_total": 2184,
+      "n_overture_bldg": 1707,
+      "ms_only_pct": 95.78,
+      "untyped_pct": 99.53,
+      "svi_overall": 0.3726,
+      "wildfire_burn_pct": 28.11,
+      "raw_bldg_gap": 0.00657,
+      "v8_coverage_gap": 0.10046
+    },
+    {
+      "GEOID": "48215020505",
+      "region": "south-central-tx",
+      "county_name": "Hidalgo County, TX",
+      "NAMELSAD": "Census Tract 205.05",
+      "aiannh_name": "",
+      "pop_total": 2350,
+      "n_overture_bldg": 873,
+      "ms_only_pct": 95.76,
+      "untyped_pct": 99.43,
+      "svi_overall": 0.9739,
+      "wildfire_burn_pct": 0.0,
+      "raw_bldg_gap": 0.02579,
+      "v8_coverage_gap": 0.04202
+    },
+    {
+      "GEOID": "40135030101",
+      "region": "eastern-ok",
+      "county_name": "Sequoyah County, OK",
+      "NAMELSAD": "Census Tract 301.01",
+      "aiannh_name": "Cherokee OTSA",
+      "pop_total": 4077,
+      "n_overture_bldg": 4069,
+      "ms_only_pct": 95.75,
+      "untyped_pct": 99.21,
+      "svi_overall": 0.7543,
+      "wildfire_burn_pct": 4.53,
+      "raw_bldg_gap": 0.01536,
+      "v8_coverage_gap": 0.16164
+    },
+    {
+      "GEOID": "40147000400",
+      "region": "eastern-ok",
+      "county_name": "Washington County, OK",
+      "NAMELSAD": "Census Tract 4",
+      "aiannh_name": "Cherokee OTSA",
+      "pop_total": 4599,
+      "n_overture_bldg": 2392,
+      "ms_only_pct": 95.74,
+      "untyped_pct": 97.7,
+      "svi_overall": 0.7246,
+      "wildfire_burn_pct": 0.0,
+      "raw_bldg_gap": 0.009,
+      "v8_coverage_gap": 0.04549
+    }
+  ],
+  "discovery_2_taxonomy_and_shield_inversion": {
+    "n_tracts_with_hidden_fire_station": 354,
+    "pop_in_hidden_fire_station_tracts": 1286312,
+    "n_tracts_with_hidden_ems": 2068,
+    "pop_in_hidden_ems_tracts": 8946034,
+    "total_fire_sibling_pois": 1625,
+    "total_school_sibling_pois": 13749,
+    "rural_vs_urban_routed_tertiary_exclusion": {
+      "n_focal": 1598,
+      "n_ref": 5720,
+      "mean_focal": 0.20933,
+      "mean_ref": 0.04029,
+      " focal_ci95": [
+        0.19808,
+        0.22091
+      ],
+      "ref_ci95": [
+        0.03688,
+        0.044
+      ],
+      "diff": 0.16905,
+      "diff_ci95": [
+        0.15696,
+        0.1808
+      ],
+      "ratio": 5.1961,
+      "ratio_ci95": [
+        4.682,
+        5.7718
+      ],
+      "mann_whitney_p": 0.0
+    },
+    "tribal_vs_nontribal_routed_tertiary_exclusion": {
+      "n_focal": 727,
+      "n_ref": 6591,
+      "mean_focal": 0.17975,
+      "mean_ref": 0.06589,
+      " focal_ci95": [
+        0.16174,
+        0.1984
+      ],
+      "ref_ci95": [
+        0.06202,
+        0.06997
+      ],
+      "diff": 0.11386,
+      "diff_ci95": [
+        0.09544,
+        0.13286
+      ],
+      "ratio": 2.728,
+      "ratio_ci95": [
+        2.4138,
+        3.0628
+      ],
+      "mann_whitney_p": 3.602299027675686e-69
+    },
+    "rural_vs_urban_hidden_fire_rate": {
+      "n_focal": 1638,
+      "n_ref": 8154,
+      "mean_focal": 0.13919,
+      "mean_ref": 0.01545,
+      " focal_ci95": [
+        0.12271,
+        0.15568
+      ],
+      "ref_ci95": [
+        0.01288,
+        0.01815
+      ],
+      "diff": 0.12374,
+      "diff_ci95": [
+        0.10664,
+        0.13975
+      ],
+      "ratio": 9.0078,
+      "ratio_ci95": [
+        7.3531,
+        11.0971
+      ],
+      "mann_whitney_p": 2.3525012746774485e-132
+    }
+  },
+  "discovery_2_named_tracts": [
+    {
+      "GEOID": "04021000700",
+      "region": "maricopa-az",
+      "county_name": "Pinal County, AZ",
+      "aiannh_name": "",
+      "pop_total": 3114,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 1,
+      "routed_hwy_scored_km": 0.0,
+      "routed_tert_excluded_km": 10.51,
+      "routed_exclusion_pct": 100.0,
+      "v8_coverage_gap": 0.20951
+    },
+    {
+      "GEOID": "48373210205",
+      "region": "south-central-tx",
+      "county_name": "Polk County, TX",
+      "aiannh_name": "",
+      "pop_total": 2513,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 1,
+      "routed_hwy_scored_km": 0.13,
+      "routed_tert_excluded_km": 11.78,
+      "routed_exclusion_pct": 98.9,
+      "v8_coverage_gap": 0.29945
+    },
+    {
+      "GEOID": "40051000904",
+      "region": "eastern-ok",
+      "county_name": "Grady County, OK",
+      "aiannh_name": "Chickasaw OTSA",
+      "pop_total": 3898,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 1,
+      "routed_hwy_scored_km": 0.31,
+      "routed_tert_excluded_km": 7.86,
+      "routed_exclusion_pct": 96.2,
+      "v8_coverage_gap": 0.25771
+    },
+    {
+      "GEOID": "40149965000",
+      "region": "eastern-ok",
+      "county_name": "Washita County, OK",
+      "aiannh_name": "Cheyenne and Arapaho OTSA",
+      "pop_total": 1989,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 2,
+      "routed_hwy_scored_km": 100.77,
+      "routed_tert_excluded_km": 597.57,
+      "routed_exclusion_pct": 85.6,
+      "v8_coverage_gap": 0.29365
+    },
+    {
+      "GEOID": "06093000800",
+      "region": "northern-ca",
+      "county_name": "Siskiyou County, CA",
+      "aiannh_name": "Quartz Valley Reservation",
+      "pop_total": 3370,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 2,
+      "routed_hwy_scored_km": 46.16,
+      "routed_tert_excluded_km": 192.57,
+      "routed_exclusion_pct": 80.7,
+      "v8_coverage_gap": 0.2061
+    },
+    {
+      "GEOID": "40151954400",
+      "region": "eastern-ok",
+      "county_name": "Woods County, OK",
+      "aiannh_name": "",
+      "pop_total": 1585,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 2,
+      "routed_hwy_scored_km": 72.2,
+      "routed_tert_excluded_km": 273.84,
+      "routed_exclusion_pct": 79.1,
+      "v8_coverage_gap": 0.24735
+    },
+    {
+      "GEOID": "40101001600",
+      "region": "eastern-ok",
+      "county_name": "Muskogee County, OK",
+      "aiannh_name": "Creek OTSA",
+      "pop_total": 3823,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 2,
+      "routed_hwy_scored_km": 63.02,
+      "routed_tert_excluded_km": 177.16,
+      "routed_exclusion_pct": 73.8,
+      "v8_coverage_gap": 0.24133
+    },
+    {
+      "GEOID": "06045010100",
+      "region": "northern-ca",
+      "county_name": "Mendocino County, CA",
+      "aiannh_name": "Round Valley Off-Reservation Trust Land",
+      "pop_total": 3100,
+      "ovt_fire_primary": 0,
+      "ovt_fire_sibling_or_bldg": 1,
+      "routed_hwy_scored_km": 41.03,
+      "routed_tert_excluded_km": 114.72,
+      "routed_exclusion_pct": 73.7,
+      "v8_coverage_gap": 0.18225
+    }
+  ],
+  "discovery_3_within_stratum_and_intracounty": {
+    "within_rural_burned_vs_unburned_cov_gap": {
+      "n_focal": 274,
+      "n_ref": 1364,
+      "mean_focal": 0.13765,
+      "mean_ref": 0.14808,
+      " focal_ci95": [
+        0.13327,
+        0.14199
+      ],
+      "ref_ci95": [
+        0.14581,
+        0.15039
+      ],
+      "diff": -0.01043,
+      "diff_ci95": [
+        -0.01538,
+        -0.00554
+      ],
+      "ratio": 0.9296,
+      "ratio_ci95": [
+        0.8967,
+        0.962
+      ],
+      "mann_whitney_p": 0.0006251563718254761
+    },
+    "within_rural_burned_vs_unburned_untyped_bldg": {
+      "n_focal": 274,
+      "n_ref": 1364,
+      "mean_focal": 0.93735,
+      "mean_ref": 0.96479,
+      " focal_ci95": [
+        0.9205,
+        0.95276
+      ],
+      "ref_ci95": [
+        0.96046,
+        0.96884
+      ],
+      "diff": -0.02744,
+      "diff_ci95": [
+        -0.04482,
+        -0.01177
+      ],
+      "ratio": 0.9716,
+      "ratio_ci95": [
+        0.9536,
+        0.9878
+      ],
+      "mann_whitney_p": 2.434268294555381e-09
+    },
+    "intra_county_colonia_pockets_vs_benign_host_counties_cov_gap": {
+      "n_focal": 61,
+      "n_ref": 7428,
+      "mean_focal": 0.08784,
+      "mean_ref": 0.03843,
+      " focal_ci95": [
+        0.07861,
+        0.09775
+      ],
+      "ref_ci95": [
+        0.03773,
+        0.03916
+      ],
+      "diff": 0.04941,
+      "diff_ci95": [
+        0.04019,
+        0.05922
+      ],
+      "ratio": 2.2858,
+      "ratio_ci95": [
+        2.04,
+        2.5435
+      ],
+      "mann_whitney_p": 2.6234115765763278e-24
+    },
+    "intra_county_colonia_pockets_vs_benign_host_counties_ms_only": {
+      "n_focal": 61,
+      "n_ref": 7428,
+      "mean_focal": 0.3858,
+      "mean_ref": 0.2593,
+      " focal_ci95": [
+        0.30707,
+        0.46577
+      ],
+      "ref_ci95": [
+        0.2515,
+        0.26693
+      ],
+      "diff": 0.1265,
+      "diff_ci95": [
+        0.04736,
+        0.20777
+      ],
+      "ratio": 1.4878,
+      "ratio_ci95": [
+        1.1819,
+        1.8006
+      ],
+      "mann_whitney_p": 1.6339495574531926e-05
+    }
+  },
+  "discovery_3_named_tracts": [
+    {
+      "GEOID": "48355005900",
+      "region": "south-central-tx",
+      "county_name": "Nueces County, TX",
+      "pop_total": 4091,
+      "svi_overall": 0.9343,
+      "tract_v8_gap": 0.16871,
+      "host_county_mean_gap": 0.03372,
+      "intra_county_disparity_ratio": 5.0,
+      "ms_only_pct": 86.2,
+      "untyped_pct": 98.9
+    },
+    {
+      "GEOID": "48453002434",
+      "region": "south-central-tx",
+      "county_name": "Travis County, TX",
+      "pop_total": 2110,
+      "svi_overall": 0.8613,
+      "tract_v8_gap": 0.14768,
+      "host_county_mean_gap": 0.03119,
+      "intra_county_disparity_ratio": 4.74,
+      "ms_only_pct": 26.7,
+      "untyped_pct": 99.9
+    },
+    {
+      "GEOID": "04013723305",
+      "region": "maricopa-az",
+      "county_name": "Maricopa County, AZ",
+      "pop_total": 2486,
+      "svi_overall": 0.9254,
+      "tract_v8_gap": 0.11211,
+      "host_county_mean_gap": 0.02762,
+      "intra_county_disparity_ratio": 4.06,
+      "ms_only_pct": 14.3,
+      "untyped_pct": 32.4
+    },
+    {
+      "GEOID": "04019940800",
+      "region": "maricopa-az",
+      "county_name": "Pima County, AZ",
+      "pop_total": 3997,
+      "svi_overall": 0.9598,
+      "tract_v8_gap": 0.13089,
+      "host_county_mean_gap": 0.03973,
+      "intra_county_disparity_ratio": 3.29,
+      "ms_only_pct": 44.4,
+      "untyped_pct": 99.3
+    },
+    {
+      "GEOID": "48303010513",
+      "region": "south-central-tx",
+      "county_name": "Lubbock County, TX",
+      "pop_total": 2309,
+      "svi_overall": 0.9145,
+      "tract_v8_gap": 0.14955,
+      "host_county_mean_gap": 0.0469,
+      "intra_county_disparity_ratio": 3.19,
+      "ms_only_pct": 41.8,
+      "untyped_pct": 95.0
+    },
+    {
+      "GEOID": "04013941000",
+      "region": "maricopa-az",
+      "county_name": "Maricopa County, AZ",
+      "pop_total": 3540,
+      "svi_overall": 0.9399,
+      "tract_v8_gap": 0.08466,
+      "host_county_mean_gap": 0.02762,
+      "intra_county_disparity_ratio": 3.07,
+      "ms_only_pct": 4.7,
+      "untyped_pct": 75.0
+    },
+    {
+      "GEOID": "48491021000",
+      "region": "south-central-tx",
+      "county_name": "Williamson County, TX",
+      "pop_total": 3003,
+      "svi_overall": 0.9531,
+      "tract_v8_gap": 0.09353,
+      "host_county_mean_gap": 0.03461,
+      "intra_county_disparity_ratio": 2.7,
+      "ms_only_pct": 3.0,
+      "untyped_pct": 99.0
+    },
+    {
+      "GEOID": "04019941100",
+      "region": "maricopa-az",
+      "county_name": "Pima County, AZ",
+      "pop_total": 2421,
+      "svi_overall": 0.9625,
+      "tract_v8_gap": 0.10492,
+      "host_county_mean_gap": 0.03973,
+      "intra_county_disparity_ratio": 2.64,
+      "ms_only_pct": 34.2,
+      "untyped_pct": 94.5
+    }
+  ]
+}

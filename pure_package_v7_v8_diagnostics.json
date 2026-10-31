@@ -1,0 +1,245 @@
+{
+  "seed": 42,
+  "compliance": {
+    "uses_only_2026_09_25_challenge_package": true,
+    "uses_removed_reference_layers": false,
+    "uses_reconstructed_ground_truth": false,
+    "uses_external_urls_or_github_csvs": false
+  },
+  "files": {
+    "v7_csv": "zindi_v7_pure_package_structural.csv",
+    "v7_sha256": "03eeee1df3e88a4686b346c4e4b85e560fa350afc1fe3be6f4fd52e3549debf8",
+    "v8_csv": "zindi_v8_pure_package_hierarchical.csv",
+    "v8_sha256": "8f747f4813355218f43e2497418a7c5223068452a9cb94aa878650e147865e8f"
+  },
+  "v7_vs_v8_comparison": {
+    "pearson_r": 0.992233,
+    "mean_abs_diff": 0.004061
+  },
+  "v7_diagnostics": {
+    "overall_mean": 0.05395829180249961,
+    "overall_std": 0.04936545514037142,
+    "oof_anchor_r2": 0.53624,
+    "oof_zoning_tau_sq": 0.4344,
+    "quantiles": {
+      "0.0": 0.0,
+      "0.1": 0.01683311350105623,
+      "0.25": 0.021394769295020346,
+      "0.5": 0.03159320911458341,
+      "0.75": 0.06679969598375653,
+      "0.9": 0.13234337816334285,
+      "0.99": 0.21936913009347292,
+      "1.0": 0.3087299548799991
+    },
+    "region_means": {
+      "eastern-ok": 0.08943835608165246,
+      "eastern-wa": 0.06787111049641877,
+      "maricopa-az": 0.03693735301200028,
+      "northern-ca": 0.05930116705118599,
+      "south-central-tx": 0.04994207655055312
+    },
+    "component_cond_means": {
+      "transport_gap_mean_when_def": 0.0716135151507774,
+      "transport_defined_rate": 0.7319787625076577,
+      "building_gap_mean": 0.0023268680719029807,
+      "poi_gap_mean": 0.09671663768196398,
+      "fire_defined_rate": 0.34276087400449257,
+      "ems_defined_rate": 0.07310598325505412,
+      "schools_defined_rate": 0.8653257096181336
+    }
+  },
+  "v8_diagnostics": {
+    "overall_mean": 0.05657074798445159,
+    "overall_std": 0.05038629066890238,
+    "oof_anchor_r2": 0.52698,
+    "oof_zoning_tau_sq": 0.44307,
+    "quantiles": {
+      "0.0": 0.0,
+      "0.1": 0.017819373802944776,
+      "0.25": 0.0224910103655636,
+      "0.5": 0.03393342418855384,
+      "0.75": 0.07149268815685628,
+      "0.9": 0.13768551361817813,
+      "0.99": 0.22452217750085593,
+      "1.0": 0.30023097752572403
+    },
+    "region_means": {
+      "eastern-ok": 0.09672377907730052,
+      "eastern-wa": 0.07165483362675484,
+      "maricopa-az": 0.0387101092716862,
+      "northern-ca": 0.06233265725448047,
+      "south-central-tx": 0.05172723648796923
+    },
+    "anchor_tracts_n": 4365,
+    "component_cond_means": {
+      "transport_gap_mean_when_def": 0.07382436635017789,
+      "transport_defined_rate": 0.7324892791505003,
+      "building_gap_mean": 0.0026305800807399273,
+      "poi_gap_mean": 0.10154079742946873,
+      "fire_defined_rate": 0.3484786604043292,
+      "ems_defined_rate": 0.07310598325505412,
+      "schools_defined_rate": 0.8637941596896059
+    }
+  },
+  "edge_cases": {
+    "n_total_scored_tracts": 9794,
+    "n_pure_water_aland_zero": 2,
+    "pure_water_geoids": [
+      "48039990000",
+      "48057990000"
+    ],
+    "pure_water_v7_scores": [
+      {
+        "GEOID": "48039990000",
+        "coverage_gap_score": 0.0
+      },
+      {
+        "GEOID": "48057990000",
+        "coverage_gap_score": 0.0
+      }
+    ],
+    "pure_water_v8_scores": [
+      {
+        "GEOID": "48039990000",
+        "coverage_gap_score": 0.0
+      },
+      {
+        "GEOID": "48057990000",
+        "coverage_gap_score": 0.0
+      }
+    ],
+    "n_water_dominated_ge_50pct": 43,
+    "water_dominated_v7_mean": 0.06751,
+    "water_dominated_v8_mean": 0.06989,
+    "n_zero_population": 27,
+    "zero_pop_v7_mean": 0.02891,
+    "zero_pop_v8_mean": 0.0443,
+    "n_zero_overture_mtps_road_km": 137,
+    "zero_road_v7_mean": 0.0897,
+    "zero_road_v8_mean": 0.09238,
+    "cross_state_nm_tract_35023970000": {
+      "v7": [
+        {
+          "GEOID": "35023970000",
+          "region": "maricopa-az",
+          "coverage_gap_score": 0.090044,
+          "transport_gap": 0.114176,
+          "building_gap": 0.0,
+          "poi_gap": 0.128349
+        }
+      ],
+      "v8": [
+        {
+          "GEOID": "35023970000",
+          "region": "maricopa-az",
+          "coverage_gap_score": 0.099594,
+          "transport_gap": 0.118346,
+          "building_gap": 0.0,
+          "poi_gap": 0.154998
+        }
+      ]
+    },
+    "leading_zero_fips_counts": {
+      "04": 1592,
+      "06": 591,
+      "35": 1,
+      "40": 1192,
+      "48": 6003,
+      "53": 415
+    }
+  },
+  "alternative_weighting_sensitivity": {
+    "v7_structural": {
+      "overall": {
+        "equal_tract_mean": 0.05396,
+        "emergency_domain_weighted_mean": 0.06981,
+        "population_weighted_mean": 0.04994,
+        "land_area_weighted_mean": 0.12411,
+        "svi_cvi_equity_weighted_mean": 0.05389
+      },
+      "by_region": {
+        "eastern-ok": {
+          "equal_tract_mean": 0.08944,
+          "emergency_domain_weighted_mean": 0.11541,
+          "population_weighted_mean": 0.08828,
+          "land_area_weighted_mean": 0.16659,
+          "svi_cvi_equity_weighted_mean": 0.08888
+        },
+        "eastern-wa": {
+          "equal_tract_mean": 0.06787,
+          "emergency_domain_weighted_mean": 0.08639,
+          "population_weighted_mean": 0.06143,
+          "land_area_weighted_mean": 0.12362,
+          "svi_cvi_equity_weighted_mean": 0.06645
+        },
+        "maricopa-az": {
+          "equal_tract_mean": 0.03694,
+          "emergency_domain_weighted_mean": 0.05008,
+          "population_weighted_mean": 0.03423,
+          "land_area_weighted_mean": 0.0972,
+          "svi_cvi_equity_weighted_mean": 0.03634
+        },
+        "northern-ca": {
+          "equal_tract_mean": 0.0593,
+          "emergency_domain_weighted_mean": 0.07721,
+          "population_weighted_mean": 0.05501,
+          "land_area_weighted_mean": 0.1257,
+          "svi_cvi_equity_weighted_mean": 0.05881
+        },
+        "south-central-tx": {
+          "equal_tract_mean": 0.04994,
+          "emergency_domain_weighted_mean": 0.06411,
+          "population_weighted_mean": 0.0469,
+          "land_area_weighted_mean": 0.12176,
+          "svi_cvi_equity_weighted_mean": 0.0501
+        }
+      }
+    },
+    "v8_hierarchical": {
+      "overall": {
+        "equal_tract_mean": 0.05657,
+        "emergency_domain_weighted_mean": 0.0727,
+        "population_weighted_mean": 0.05236,
+        "land_area_weighted_mean": 0.13128,
+        "svi_cvi_equity_weighted_mean": 0.05661
+      },
+      "by_region": {
+        "eastern-ok": {
+          "equal_tract_mean": 0.09672,
+          "emergency_domain_weighted_mean": 0.12371,
+          "population_weighted_mean": 0.09572,
+          "land_area_weighted_mean": 0.17678,
+          "svi_cvi_equity_weighted_mean": 0.09645
+        },
+        "eastern-wa": {
+          "equal_tract_mean": 0.07165,
+          "emergency_domain_weighted_mean": 0.09066,
+          "population_weighted_mean": 0.065,
+          "land_area_weighted_mean": 0.12936,
+          "svi_cvi_equity_weighted_mean": 0.07032
+        },
+        "maricopa-az": {
+          "equal_tract_mean": 0.03871,
+          "emergency_domain_weighted_mean": 0.05238,
+          "population_weighted_mean": 0.0358,
+          "land_area_weighted_mean": 0.10481,
+          "svi_cvi_equity_weighted_mean": 0.03815
+        },
+        "northern-ca": {
+          "equal_tract_mean": 0.06233,
+          "emergency_domain_weighted_mean": 0.08037,
+          "population_weighted_mean": 0.05788,
+          "land_area_weighted_mean": 0.13229,
+          "svi_cvi_equity_weighted_mean": 0.06199
+        },
+        "south-central-tx": {
+          "equal_tract_mean": 0.05173,
+          "emergency_domain_weighted_mean": 0.06597,
+          "population_weighted_mean": 0.04864,
+          "land_area_weighted_mean": 0.12817,
+          "svi_cvi_equity_weighted_mean": 0.05197
+        }
+      }
+    }
+  }
+}

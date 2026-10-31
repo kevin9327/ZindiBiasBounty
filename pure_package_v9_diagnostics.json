@@ -1,0 +1,110 @@
+{
+  "seed": 42,
+  "file": "zindi_v9_pure_package_champion.csv",
+  "sha256": "1a11aff4799f0d31677c2cfe0e21eac017b9ddc27dbe9e784bead80dc2e1c574",
+  "overall_mean": 0.033163,
+  "overall_std": 0.046731,
+  "frac_near_zero_lt_0_01": 0.4576,
+  "frac_high_gap_ge_0_15": 0.0359,
+  "quantiles": {
+    "0.0": 0.0,
+    "0.1": 0.00139,
+    "0.25": 0.00382,
+    "0.5": 0.01241,
+    "0.75": 0.04421,
+    "0.9": 0.09321,
+    "0.95": 0.12596,
+    "0.99": 0.22936,
+    "1.0": 0.38287
+  },
+  "region_means": {
+    "eastern-ok": 0.05484,
+    "eastern-wa": 0.04419,
+    "maricopa-az": 0.03209,
+    "northern-ca": 0.03211,
+    "south-central-tx": 0.02848
+  },
+  "region_transport_defined_rates": {
+    "eastern-ok": 0.7802,
+    "eastern-wa": 0.7783,
+    "maricopa-az": 0.4407,
+    "northern-ca": 0.6227,
+    "south-central-tx": 0.7166
+  },
+  "component_diagnostics": {
+    "transport_cond_mean": 0.04365,
+    "transport_expected_contrib": 0.02949,
+    "building_mean": 0.00982,
+    "poi_mean": 0.05315,
+    "fire_defined_rate_ge_05": 0.3701,
+    "fire_expected_defined_sum": 0.3892,
+    "fire_expected_gap_uncond": 0.11694,
+    "ems_defined_rate_ge_05": 0.0807,
+    "ems_expected_gap_uncond": 0.01273,
+    "schools_defined_rate_ge_05": 0.8025,
+    "schools_expected_gap_uncond": 0.04681,
+    "cbp_defined_rate_ge_05": 0.9998,
+    "cbp_mean_gap": 0.00017
+  },
+  "transport_network_audit": {
+    "eastern-ok": {
+      "target_defined_rate": 0.7878,
+      "emp_core_in_def": 0.7651,
+      "emp_core_b22_def": 0.7802,
+      "emp_core_b38_def": 0.7827
+    },
+    "eastern-wa": {
+      "target_defined_rate": 0.7855,
+      "emp_core_in_def": 0.7663,
+      "emp_core_b22_def": 0.7807,
+      "emp_core_b38_def": 0.7855
+    },
+    "maricopa-az": {
+      "target_defined_rate": 0.4545,
+      "emp_core_in_def": 0.4388,
+      "emp_core_b22_def": 0.4702,
+      "emp_core_b38_def": 0.4733
+    },
+    "northern-ca": {
+      "target_defined_rate": 0.6311,
+      "emp_core_in_def": 0.6041,
+      "emp_core_b22_def": 0.6159,
+      "emp_core_b38_def": 0.6261
+    },
+    "south-central-tx": {
+      "target_defined_rate": 0.7161,
+      "emp_core_in_def": 0.6984,
+      "emp_core_b22_def": 0.72,
+      "emp_core_b38_def": 0.7259
+    },
+    "oof_hwy_auroc": 0.9552
+  },
+  "facility_pu_audit": {
+    "oof_fire_auroc": 0.8099,
+    "oof_k12_auroc": 0.7653,
+    "oof_ems_auroc": 0.769,
+    "c3_fire_wbar": 0.8962,
+    "c3_k12_wbar": 0.9525,
+    "n_unmapped_fire_when_ovt0": 586,
+    "n_unmapped_k12_when_sch6_0": 125,
+    "n_true_k12_tracts": 7431,
+    "n_preschool_only_tracts_fixed": 434
+  },
+  "equity_and_edge_audit": {
+    "rural_mean_gt_urban_mean": true,
+    "rural_mean": 0.06807,
+    "urban_mean": 0.02502,
+    "tribal_mean_gt_nontribal_mean": true,
+    "tribal_ge25pct_mean": 0.06774,
+    "nontribal_mean": 0.02984,
+    "high_svi_gt_low_svi": true,
+    "high_svi_q4_mean": 0.03129,
+    "low_svi_q1_mean": 0.02768,
+    "pure_water_all_zero": true
+  },
+  "v8_comparison": {
+    "v8_sha256_intact": "8f747f4813355218f43e2497418a7c5223068452a9cb94aa878650e147865e8f",
+    "corr_v9_vs_v8": 0.50307,
+    "mad_v9_vs_v8": 0.039
+  }
+}
